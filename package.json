@@ -9,7 +9,7 @@
     "deploy": "surge — domain summon-apothecary.surge.sh"
   },
   "author": "Jay Carr",
-  "license": "UNLICENSED",
+  "license": "GNU GPL v3.0",
   "devDependencies": {
     "budo": "^11.6.3"
   }
