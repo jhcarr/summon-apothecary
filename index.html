@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=”UTF-8">
+    <title>Summon-Apothecary</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="res/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-header">Version 0.1.0 : summon-apothecary</div>
+    </nav>
+
+    <div id="main_display">
+      <h1>Let's Build A Better Future</h1>
+      <div id="account_setup_controls" class="container">
+
+        <div class="row">
+          <label for="user_type_toggle" class="col">
+            Are you providing help or seeking help?
+          </label>
+          <div id="user_type_toggle" class="col btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary active">
+              <input type="radio" name="options" id="providing" autocomplete="off" checked> Providing
+            </label>
+            <label class="btn btn-secondary">
+              <input type="radio" name="options" id="seeking" autocomplete="off"> Seeking
+            </label>
+          </div>
+        </div>
+
+        <div id="contact_info_display" class="row" style="display:none;">
+          <label id="provider_contact_label" for="contact_input_controls" class="col">
+            <div id="provider_contact_label_text">
+              How should people seeking help contact you?
+            </div>
+            <div id="seeker_contact_label_text">
+              How should people providing help contact you?
+            </div>
+          </label>
+          <div id="contact_input_controls" class="col">
+            <form id="contact_info">
+              <div id="username" class="row">
+                <label class="col">Preferred Name:</label>
+                <input id="username_field" class="col" type="text" placeholder="What would you like to be called?" />
+              </div>
+              <div id="email" class="row">
+                <label class="col">Email:</label>
+                <input id="email_field" class="col" type="text" placeholder="name@email.provider" />
+              </div>
+              <div id="phone" class="row">
+                <label class="col">Phone:</label>
+                <input id="phone_field" class="col" type="text" placeholder="(123) 456-7890" />
+              </div>
+              <div class="row">
+                <div class="col-lg-12">
+                  <input id="contact_info_submit_button" class="btn btn-primary" type="submit" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div id="contact_card_display" class="row" style="display:none;">
+          <div class="col">
+            [internal] Validate this data and send it to the database:
+          </div>
+          <div class="col">
+            <div id="contact_card" class="card">
+              <div class="card-body">
+                <h2 id="card-username" class="card-title">Preferred Name</h2>
+                <p id="card-email" class="card-text">Email</p>
+                <p id="card-phone" class="card-text">Phone</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="next_step" class="row" style="display:none;">
+          <p>[internal] Then render list of either help providers or help seekers w/sorting options</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="res/js/index.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,6 @@
+# Let Node manage Node content
+node_modules/
+package-lock.json
+
+# Let Surge manage Surge content
+CNAME

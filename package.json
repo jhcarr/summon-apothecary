@@ -1,0 +1,16 @@
+{
+  "name": "covid-19_aid_advocacy",
+  "version": "1.0.0",
+  "description": "A quick and dirty prototype rollodex for grass-roots COVID-19 response",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "budo res/js/index.js -l -wg -o",
+    "deploy": "surge — domain summon-apothecary.surge.sh"
+  },
+  "author": "Jay Carr",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "budo": "^11.6.3"
+  }
+}
