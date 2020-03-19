@@ -1,12 +1,3 @@
-// index.js
-
-var helper_contacts=[];
-var seeker_contacts=[];
-
-function invalidContactInfo() {
-  return [];
-}
-
 function toggleContactDisplayText() {
   var userType = $('#user_type_toggle input:checked').prop('id');
 
@@ -27,19 +18,16 @@ $(document).ready(function(){
     toggleContactDisplayText();
   });
 
-  $("#contact_info").submit(function() {
-    if (invalidContactInfo().length) {
-      // flag everything in the list returned by "invalidContactInfo()"
-      return false;
-    }
-    else {
-      $('#card-username').text($('#username_field').val());
-      $('#contact_card_display').show();
-      $('#next_step').show();
+  $('#contact_info').submit(function() {
+    $('#card-username').text($('#username_field').val());
+    $('#card-email').text($('#email_field').val());
+    $('#card-phone').text($('#phone_field').val());
+    $('#contact_card_display').show();
+    $('#next_step').show();
 
-      // we're not actually submitting anything anywhere with this demo
-      return false;
-    }
+    // we're not actually submitting anything anywhere with this demo
+    return false;
+
   });
 
 });
